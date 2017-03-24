@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Metodo que se ejecuta al presionar el boton "Ingresar"
-    public void presionarBoton(View vista)
-    {
+    public void presionarBoton(View vista) {
         //Recibo los Editetxts y guardo sus valores en varibales string
         EditText primerEdit = (EditText)findViewById(R.id.primerEditText);
         String primertexto = primerEdit.getText().toString();
@@ -30,5 +29,15 @@ public class MainActivity extends AppCompatActivity {
 
         //Muestro los largos en un toast
         Toast.makeText(this, "El 1er texto tiene "+largoPrimerTexto+" caracteres y el 2do tiene "+largoSegundoTexto+" caracteres", Toast.LENGTH_SHORT).show();
+
+        //Comparo el largo de los strings para ver si son iguales
+        if (largoPrimerTexto==largoSegundoTexto) {
+            Toast.makeText(this,"Los dos textos tienen el mismo largo",Toast.LENGTH_SHORT).show();
+        }
+        //Si no tienen el mismo largo resto el primero por el segundo y muestro el valor absoluto
+        else{
+            int diferenciaEntreTextos = Math.abs(largoPrimerTexto-largoSegundoTexto);
+            Toast.makeText(this,"El texto mas grande tiene " +diferenciaEntreTextos+ " caracteres mas que el corto", Toast.LENGTH_SHORT).show();
+        }
     }
 }
