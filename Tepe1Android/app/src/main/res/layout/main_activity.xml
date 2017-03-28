@@ -27,4 +27,11 @@
         android:onClick="presionarBoton"
         android:text="Ingresar" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al punto 2"
+        android:layout_marginTop="110dp"
+        android:onClick="presionarActivity2" />
+
 </LinearLayout>

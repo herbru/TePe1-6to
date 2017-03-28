@@ -1,5 +1,6 @@
 package com.example.gabriel.tepe1android;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.io.Console;
+
+import layout.com.Activity2;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,5 +55,12 @@ public class MainActivity extends AppCompatActivity {
 
         //Muestro en un Toast caracteresConcatenados
         Toast.makeText(this,"Los primeros 3 caracteres de cada texto concatenados son: "+caracteresConcatenados,Toast.LENGTH_SHORT).show();
+    }
+
+    public void tildarCheck (View vista)
+    {
+        Intent Caca;
+        Caca = new Intent(this, Activity2.class);
+        startActivity(Caca);
     }
 }
