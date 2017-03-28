@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"Los primeros 3 caracteres de cada texto concatenados son: "+caracteresConcatenados,Toast.LENGTH_SHORT).show();
     }
 
-    public void tildarCheck (View vista)
+    public void presionarActivity2 (View vista)
     {
         Intent Caca;
         Caca = new Intent(this, Activity2.class);
