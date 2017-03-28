@@ -59,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void presionarActivity2 (View vista)
     {
-        Intent Caca;
-        Caca = new Intent(this, Activity2.class);
-        startActivity(Caca);
+        Intent nuevaActividad;
+        nuevaActividad = new Intent(this, Activity2.class);
+        startActivity(nuevaActividad);
     }
 }
