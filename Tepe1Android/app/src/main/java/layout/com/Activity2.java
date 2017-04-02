@@ -1,5 +1,6 @@
 package layout.com;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.gabriel.tepe1android.Activity_3;
 import com.example.gabriel.tepe1android.R;
 
 public class Activity2 extends AppCompatActivity {
@@ -17,7 +19,14 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
     }
 
-    public void ingresarActivity2 (View view)
+    public void presionarActivity3(View vista)
+    {
+        Intent nuevaActividad;
+        nuevaActividad = new Intent(this, Activity_3.class);
+        startActivity(nuevaActividad);
+    }
+
+    public void ingresarActivity2 (View vista)
     {
         CheckBox check = (CheckBox)findViewById(R.id.checkActivity2);
 

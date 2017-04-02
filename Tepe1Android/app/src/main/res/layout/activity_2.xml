@@ -18,4 +18,11 @@
         android:layout_height="wrap_content"
         android:text="Ingresar"
         android:onClick="ingresarActivity2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir al punto 3"
+        android:onClick="presionarActivity3"
+        android:layout_marginTop="40dp"/>
 </LinearLayout>
