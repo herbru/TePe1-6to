@@ -1,4 +1,4 @@
-package layout.com;
+package com.example.gabriel.tepe1android;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -35,9 +35,6 @@ public class Activity2 extends AppCompatActivity {
         String textoIngresado = txtIngresar.getText().toString();
 
         int cantdeA = 0;
-
-
-        int comparador = 0;
 
         for (int i = 0; i < textoIngresado.length(); i++)
         {

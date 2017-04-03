@@ -3,14 +3,9 @@ package com.example.gabriel.tepe1android;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import java.io.Console;
-
-import layout.com.Activity2;
 
 public class MainActivity extends AppCompatActivity {
 
